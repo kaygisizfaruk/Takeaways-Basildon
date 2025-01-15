@@ -91,21 +91,41 @@ def recommend_takeaways(food_type, takeaways):
     else:
         return []
 
+def autocomplete(query, takeaways):
+    query = query.lower()
+    suggestions = [food_type for food_type in takeaways if food_type.startswith(query)]
+    return suggestions
+
 def main():
     print("Welcome to the Basildon Takeaway Recommendation System!")
     print("Available food types:")
     for food_type in takeaways.keys():
         print(f"- {food_type.capitalize()}")
 
-    food_type = input("\nPlease enter the type of food you're looking for: ").lower()
+    while True:
+        query = input("\nStart typing the type of food you're looking for (or press Enter to see all options): ").lower()
+        if query == "":
+            print("Available food types:")
+            for food_type in takeaways.keys():
+                print(f"- {food_type.capitalize()}")
+            continue
 
-    recommendations = recommend_takeaways(food_type, takeaways)
+        suggestions = autocomplete(query, takeaways)
+        if suggestions:
+            print("Did you mean:")
+            for suggestion in suggestions:
+                print(f"- {suggestion.capitalize()}")
+        else:
+            print(f"No suggestions found for '{query}'.")
 
-    if recommendations:
-        print(f"\nRecommended {food_type} takeaways:")
-        for idx, takeaway in enumerate(recommendations, 1):
-            print(f"{idx}. {takeaway['name']} - Rating: {takeaway['rating']} - Price: {takeaway['Price']}")
-    else:
-        print(f"\nSorry, no takeaways found for '{food_type}'. Please try another food type.")
+        food_type = input("\nPlease enter the type of food you're looking for: ").lower()
+        recommendations = recommend_takeaways(food_type, takeaways)
+
+        if recommendations:
+            print(f"\nRecommended {food_type} takeaways:")
+            for idx, takeaway in enumerate(recommendations, 1):
+                print(f"{idx}. {takeaway['name']} - Rating: {takeaway['rating']} - Address: {takeaway['address']}")
+        else:
+            print(f"\nSorry, no takeaways found for '{food_type}'. Please try another food type.")
 
 main()
