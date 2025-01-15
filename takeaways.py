@@ -123,9 +123,14 @@ def merge(left, right, key):
     sorted_list.extend(left if left else right)
     return sorted_list
 
-def recommend_takeaways(food_type, takeaways):
+def filter_by_price(takeaways, min_price, max_price):
+    return [takeaway for takeaway in takeaways if min_price <= int(takeaway["price"][0]) <= max_price]
+
+def recommend_takeaways(food_type, takeaways, sort_by="rating", min_price=None, max_price=None):
     if food_type in takeaways:
-        sorted_list = merge_sort(takeaways[food_type], "rating")
+        sorted_list = merge_sort(takeaways[food_type], sort_by)
+        if min_price is not None and max_price is not None:
+            sorted_list = filter_by_price(sorted_list, min_price, max_price)
         return sorted_list
     else:
         return []
@@ -142,7 +147,10 @@ def main():
         print(f"- {food_type.capitalize()}")
 
     while True:
-        query = input("\nStart typing the type of food you're looking for (or press Enter to see all options): ").lower()
+        query = input("\nStart typing the type of food you're looking for (or type 'exit' to quit): ").lower()
+        if query == "exit":
+            print("Goodbye!")
+            break
         if query == "":
             print("Available food types:")
             for food_type in takeaways.keys():
@@ -153,12 +161,21 @@ def main():
         if suggestions:
             print("Did you mean:")
             for suggestion in suggestions:
-              print(f"- {suggestion.capitalize()}")
+                print(f"- {suggestion.capitalize()}")
         else:
             print(f"No suggestions found for '{query}'.")
 
         food_type = input("\nPlease enter the type of food you're looking for: ").lower()
-        recommendations = recommend_takeaways(food_type, takeaways)
+        sort_by = input("Sort by (rating/price): ").lower()
+
+        min_price = None
+        max_price = None
+        if sort_by == "price":
+            min_price = int(input("Enter minimum price (1-5): "))
+            max_price = int(input("Enter maximum price (1-5): "))
+
+
+        recommendations = recommend_takeaways(food_type, takeaways, sort_by, min_price, max_price)
 
         if recommendations:
             print(f"\nRecommended {food_type} takeaways:")
