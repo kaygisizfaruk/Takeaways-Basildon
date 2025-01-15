@@ -1,66 +1,41 @@
 takeaways = {
-    "chicken": [{"name": "Smokies Grill", "rating": 3.4, "price": 2/5}],
-    "chicken": [{"name": "Slim Chickens", "rating": 3.2, "price": 3/5}],
-    "chicken": [{"name": "Pepe's Piri Piri", "rating": 3.9, "price": 5/5}],
-    "chicken": [{"name": "Burger King", "rating": 3.5, "price": 4/5}],
-    "chicken": [{"name": "British Fried Chicken", "rating": 3.9, "price": 3/5}],
-    "chicken": [{"name": "Munchy Chicken", "rating": 3.6, "price": 2/5}],
-    "chicken": [{"name": "Bird Box", "rating": 4.0, "price": 5/5}],
-    "chicken": [{"name": "Favourite Chicken", "rating": 4.4, "price": 5/5}],
-    "burgers": [{"name": "Mega Grill", "rating": 2.3, "price": 1/5}],
-    "burgers": [{"name": "Munchy Chicken", "rating": 3.6, "price": 2/5}],
-    "burgers": [{"name": "McDonalds", "rating": 2.7, "price": 5/5}],
-    "burgers": [{"name": "Cosmos Basildon", "rating": 3.6, "price": 3/5}],
-    "burgers": [{"name": "Kings Flavour", "rating": 3.9, "price": 3/5}],
-    "burgers": [{"name": "Peri Peri Original", "rating": 4.2, "price": 3/5}],
-    "burgers": [{"name": "Five Guys", "rating": 4.0, "price": 3/5}],
-    "pizza": [{"name": "Farm Pizza", "rating": 4.3, "price": 5/5}],
-    "pizza": [{"name": "New Capital", "rating": 3.7, "price": 4/5}],
-    "pizza": [{"name": "Pizza Express", "rating": 3.3, "price": 5/5}],
-    "pizza": [{"name": "Pizza GoGo", "rating": 3.8, "price": 4/5}],
-    "pizza": [{"name": "Up The Road", "rating": 3.7, "price": 3/5}],
-    "pizza": [{"name": "Queens Pizza", "rating": 4.1, "price": 4/5}],
-    "kebab": [{"name": "Kingswood Kebab", "rating": 4.6, "price": 4/5}],
-    "kebab": [{"name": "Basildon Kitchen", "rating": 4.4, "price": 5/5}],
-    "kebab": [{"name": "Pitsea Kebab", "rating": 4.4, "price": 3/5}],
-    "kebab": [{"name": "Essex BBQ", "rating": 4.7, "price": 4/5}],
-    "asian": [{"name": "Zaika Indian", "rating": 4.7, "price": 5/5}],
-    "asian": [{"name": "Canton House", "rating": 4.3, "price": 2/5}],
-    "asian": [{"name": "CurryOn", "rating": 3.5, "price": 4/5}],
-    "asian": [{"name": "Hot Wok", "rating": 3.2, "price": 1/5}],
-    "american": [{"name": "Papa Johns", "rating": 4.3, "price": 5/5}],
-    "american": [{"name": "KFC", "rating": 3.7, "price": 4/5}],
-    "american": [{"name": "Subway", "rating": 3.6, "price": 3/5}],
-    "american": [{"name": "Dominos", "rating": 3.9, "price": 5/5}],
-    "american": [{"name": "Burger King", "rating": 3.5, "price": 4/5}],
-    "american": [{"name": "Pizza Hut", "rating": 4.0, "price": 3/5}],
-    "desserts": [{"name": "Dessert Island", "rating": 4.3, "price": 5/5}],
-    "desserts": [{"name": "Creams", "rating": 3.7, "price": 4/5}],
-    "desserts": [{"name": "Kaspas", "rating": 3.6, "price": 3/5}],
-    "desserts": [{"name": "Sundaes", "rating": 3.9, "price": 5/5}],
-    "desserts": [{"name": "Gelato", "rating": 3.5, "price": 4/5}],
-    "desserts": [{"name": "Shakeaway", "rating": 4.0, "price": 3/5}],
-    "breakfast": [{"name": "McDonalds", "rating": 2.7, "price": 5/5}],
-    "breakfast": [{"name": "Greggs", "rating": 3.2, "price": 4/5}],
-    "breakfast": [{"name": "Subway", "rating": 3.6, "price": 3/5}],
-    "breakfast": [{"name": "Costa", "rating": 3.9, "price": 5/5}],
-    "breakfast": [{"name": "Starbucks", "rating": 3.5, "price": 4/5}],
-    "breakfast": [{"name": "Cafe Nero", "rating": 4.0, "price": 3/5}],
-    "fish": [{"name": "Fish & Chips", "rating": 4.3, "price": 5/5}],
-    "fish": [{"name": "Fish House", "rating": 3.7, "price": 4/5}],
-    "fish": [{"name": "Fish Inn", "rating": 3.6, "price": 3/5}],
-    "fish": [{"name": "Atwal's Chippy", "rating": 3.9, "price": 5/5}],
-    "fish": [{"name": "Station Chippy", "rating": 3.5, "price": 4/5}],
-    "japanese": [{"name": "Sushi City", "rating": 4.0, "price": 3/5}],
-    "japanese": [{"name": "Yokoso", "rating": 3.5, "price": 4/5}],
-    "japanese": [{"name": "Sushi House", "rating": 3.6, "price": 3/5}],
-    "japanese": [{"name": "Sushi Box", "rating": 3.9, "price": 5/5}],
-    "japanese": [{"name": "Sushi Inn", "rating": 3.5, "price": 4/5}],
-    "groceries": [{"name": "Tesco", "rating": 3.7, "price": 4/5}],
-    "groceries": [{"name": "Asda", "rating": 3.6, "price": 3/5}],
-    "groceries": [{"name": "Sainsburys", "rating": 3.9, "price": 5/5}],
-    "groceries": [{"name": "Lidl", "rating": 3.5, "price": 4/5}],
-    "groceries": [{"name": "Aldi", "rating": 4.0, "price": 3/5}]
+    "chicken": [
+        {"name": "Smokies Grill", "rating": 3.4, "price": 2/5},
+        {"name": "Slim Chickens", "rating": 3.2, "price": 3/5},
+        {"name": "Pepe's Piri Piri", "rating": 3.9, "price": 5/5},
+        {"name": "Burger King", "rating": 3.5, "price": 4/5},
+        {"name": "British Fried Chicken", "rating": 3.9, "price": 3/5},
+        {"name": "Munchy Chicken", "rating": 3.6, "price": 2/5},
+        {"name": "Bird Box", "rating": 4.0, "price": 5/5},
+        {"name": "Favourite Chicken", "rating": 4.4, "price": 5/5}
+    ],
+    "burgers": [
+        {"name": "Mega Grill", "rating": 2.3, "price": 1/5},
+        {"name": "Munchy Chicken", "rating": 3.6, "price": 2/5},
+        {"name": "McDonalds", "rating": 2.7, "price": 5/5},
+        {"name": "Cosmos Basildon", "rating": 3.6, "price": 3/5},
+        {"name": "Kings Flavour", "rating": 3.9, "price": 3/5},
+        {"name": "Peri Peri Original", "rating": 4.2, "price": 3/5},
+        {"name": "Five Guys", "rating": 4.0, "price": 3/5}
+    ],
+    "pizza": [
+        {"name": "Farm Pizza", "rating": 4.3, "price": 5/5},
+        {"name": "New Capital", "rating": 3.7, "price": 4/5},
+        {"name": "Pizza Express", "rating": 3.3, "price": 5/5},
+        {"name": "Pizza GoGo", "rating": 3.8, "price": 4/5},
+        {"name": "Up The Road", "rating": 3.7, "price": 3/5},
+        {"name": "Queens Pizza", "rating": 4.1, "price": 4/5}
+    ],
+    "kebab": [
+        {"name": "Kingswood Kebab", "rating": 4.6, "price": 4/5},
+        {"name": "Basildon Kitchen", "rating": 4.4, "price": 5/5},
+        {"name": "Pitsea Kebab", "rating": 4.4, "price": 3/5},
+        {"name": "Essex BBQ", "rating": 4.7, "price": 4/5}
+    ],
+    "asian": [
+        {"name": "Zaika Indian", "rating": 4.7, "price": 5/5},
+        {"name": "Canton House", "rating": 4.3, "price": 2/5}
+    ]
 }
 
 def merge_sort(data, key):
@@ -111,6 +86,7 @@ def main():
             continue
 
         suggestions = autocomplete(query, takeaways)
+        print(f"DEBUG: suggestions = {suggestions}")  # Debug print
         if suggestions:
             print("Did you mean:")
             for suggestion in suggestions:
@@ -120,12 +96,14 @@ def main():
 
         food_type = input("\nPlease enter the type of food you're looking for: ").lower()
         recommendations = recommend_takeaways(food_type, takeaways)
+        print(f"DEBUG: recommendations = {recommendations}")  # Debug print
 
         if recommendations:
             print(f"\nRecommended {food_type} takeaways:")
             for idx, takeaway in enumerate(recommendations, 1):
-                print(f"{idx}. {takeaway['name']} - Rating: {takeaway['rating']} - Address: {takeaway['address']}")
+                print(f"{idx}. {takeaway['name']} - Rating: {takeaway['rating']} - Price: {takeaway['price']}")
         else:
             print(f"\nSorry, no takeaways found for '{food_type}'. Please try another food type.")
+
 
 main()
